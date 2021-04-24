@@ -1,0 +1,295 @@
+
+:root{
+    --backgroud-color: #ecfcff;
+    --color-text: #2E3532;
+    --color-border: black;
+}
+
+body{
+    margin: 0;
+
+}
+
+
+
+
+#darkmode:checked + main > *{  
+    --backgroud-color: black;
+    background-color: var(--backgroud-color);
+    transition: background .5s ease-in;
+    
+}
+
+#darkmode:checked + main article section{ 
+    --color-text: white;
+    color: var(--color-text);
+    transition:color .5s ease-in;
+}
+
+#darkmode:checked + main article section p{
+    --color-text: white;
+    color: var(--color-text);
+    transition:color .5s ease-in;
+
+}
+
+
+
+#darkmode{
+    display: none;
+}
+
+
+
+
+main > *{
+    background-color: var(--backgroud-color);
+    transition: .5s ease-in background;
+}
+
+
+
+header{
+    background-color: #499299;
+    width: 100%;
+}
+
+
+
+nav{
+    display: flex;
+}
+
+
+nav ul{
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: 10px;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row-reverse;
+    padding: 6px 0 6px 0;
+}
+
+nav ul a {
+    padding: 22px 50px 22px 50px;
+    text-decoration: none;
+    color: #DDE2C6;
+    font-family: 'Akaya Telivigala';
+    font-size: 20px;
+    background: linear-gradient(to bottom, #499299 50%, #28656B 50%);
+    background-size: 100% 200%;
+    transition: background-position linear .2s
+
+}
+
+nav div{
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 12%;
+}
+
+.darkmodelabel{
+    color: #DDE2C6;
+    padding: 25px 30px 22px 30px;
+    font-family: 'Akaya Telivigala';
+    font-size: 16px;
+    background: radial-gradient(farthest-side,rgb(39, 39, 39) 100%,transparent) no-repeat;
+    background-position: center;
+    background-size: 0% 0%;
+    transition: background-size linear .3s
+}
+
+
+
+
+nav h1 a {
+    text-decoration: none;
+    color: #090C02;  
+}
+
+nav h1{
+    flex: 26%;
+    padding-top: 8px;
+    font-family: 'Akaya Telivigala';
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 56px 15px 0 ;
+    transition:transform .2s linear .1s;
+
+}
+
+nav h1 a:hover{
+    transform: scale(1.12);
+    animation: letra 3s linear 0s infinite, spacing 3s linear 0s infinite;
+    
+}
+
+@keyframes letra{
+    10% {color: blue; letter-spacing: 1px;}
+    30% {color: blueviolet; letter-spacing: 2px;}
+    50% {color: chartreuse; letter-spacing: 1px;}
+    80% {color: cyan;}
+    100% {color: #090C02; letter-spacing: 0;}
+}
+
+
+
+
+.darkmodelabel:hover{
+    cursor: pointer;
+    background-size: 120% 200%;
+}
+
+nav ul a.cidade:hover{
+    cursor: pointer;
+    color: #33be21;
+    background-position:0 -100%;
+}
+
+
+
+nav ul a.policia:hover{
+    cursor: pointer;
+    color: #5100ff;
+    background-position:0 -100% ;
+}
+
+nav ul a.esporte:hover{
+    cursor: pointer;
+    color: #ff0000;
+    background-position:0 -100% ;
+}
+
+nav ul a.cultura:hover{
+    cursor: pointer;
+    color: #eeff00;
+    background-position:0 -100% ;
+    
+}
+
+
+main article{
+    display: block;
+    box-sizing: content;
+
+}
+
+
+
+main article section{
+    color: var(--color-text);
+    box-sizing: border-box;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 20px;
+    transition:color .5s ease-in;
+    
+}
+
+main article section p{
+    font-size: 17px;
+    color: var(--color-text);
+    transition: color .5s ease-in;
+}
+
+
+
+main article section .imagem-contain img{
+    width: 450px;
+    min-width: 450px;
+    height: 330px;
+    transition: transform .2s ease-in-out ;
+}
+
+main article section .imagem-contain{
+    display: inline-block;
+    overflow: hidden;
+    width: 450px;
+    min-width: 450px;
+    height: 330px;
+    margin-right: 15px;
+    background-color: black;
+    
+}
+
+main article section .imagem-contain img:hover{
+    transform: scale(1.09);
+    opacity: 0.8;
+}
+
+
+main article section a:link{
+    text-decoration: none;
+    color: black;
+}
+
+main article section a:visited{
+    text-decoration: underline;
+    color: rgb(145, 27, 255);
+}
+
+
+main article section iframe{
+    width: 450px;
+    max-width: 450px;
+    min-width: 450px;
+    height: 300px;
+    margin-right: 10px;
+}
+
+footer{
+    
+    display: flex;
+    background-color: #499299;
+    height: 200px;
+    
+}
+
+footer h4{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: 'Akaya Telivigala';
+}
+
+footer p{
+    font-size: 17px;
+    font-family: 'Akaya Telivigala';
+}
+
+
+footer > * {
+    flex-basis: 100%;
+}
+
+
+footer .contato{
+    position: relative;
+    left:15%;
+}
+
+footer .contato a{
+    text-decoration: none;
+    color: #090C02;
+    
+}
+
+footer .contato h4{
+    transition: transform .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+footer .contato h4:hover{
+    transform: scale(1.02);
+}
+
+footer .endereco{
+    position: relative;
+    left:10%;
+}
+
+
+footer .sobre{
+    position: relative;
+    left:-2%;
+}
