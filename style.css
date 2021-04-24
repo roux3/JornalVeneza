@@ -181,10 +181,11 @@ main article section{
     color: var(--color-text);
     box-sizing: border-box;
     display: flex;
-    margin-left: 20px;
+
     margin-right: 10px;
     padding: 20px;
     transition:color .5s ease-in;
+    border-bottom: solid black 2px;
     
 }
 
@@ -197,6 +198,7 @@ main article section p{
 
 
 main article section .imagem-contain img{
+ 
     width: 450px;
     min-width: 450px;
     height: 330px;
@@ -204,6 +206,7 @@ main article section .imagem-contain img{
 }
 
 main article section .imagem-contain{
+    margin-left: 20px;
     display: inline-block;
     overflow: hidden;
     width: 450px;
@@ -232,6 +235,7 @@ main article section a:visited{
 
 
 main article section iframe{
+    margin-left: 20px;
     width: 450px;
     max-width: 450px;
     min-width: 450px;
