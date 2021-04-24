@@ -22,8 +22,10 @@ body{
 
 #darkmode:checked + main article section{ 
     --color-text: white;
+    --border-color: white;
+    border-bottom: 2px var(--border-color) solid;
     color: var(--color-text);
-    transition:color .5s ease-in;
+    transition:color .5s ease-in, border-bottom .5s ease-in;
 }
 
 #darkmode:checked + main article section p{
@@ -181,11 +183,11 @@ main article section{
     color: var(--color-text);
     box-sizing: border-box;
     display: flex;
-
     margin-right: 10px;
     padding: 20px;
-    transition:color .5s ease-in;
     border-bottom: solid black 2px;
+    transition:color .5s ease-in, border-bottom .5s ease-in;
+
     
 }
 
